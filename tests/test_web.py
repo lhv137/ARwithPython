@@ -106,12 +106,17 @@ def test_input_pass(browser):
 
     login_page.set_store_name(name)
 
-    login_page.reload()
+    # login_page.reload()
 
     sleep(5)
 
     email = browser.find_element_by_xpath('//*[@id="account_email"]')
     email.send_keys('aszxc')
+
+    email.send_keys('123')
+
+    email.send_keys('cvbn')
+
 
     # login_page.fill_email(email)
 
